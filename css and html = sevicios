@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.png">  
+	<title>Hogar SOS</title>
+</head>
+<style> html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section, 
+div{
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;	
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	max-width: 100%;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #555;
+	font-family: 'selfFont', 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	outline: none;
+}
+
+input:invalid {
+	box-shadow: none;
+}
+
+body {
+	background: #fff;
+}
+
+a {
+	color: #37cadd;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	text-decoration: none;
+	color: #37cadd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 400;
+	margin: 20px 0 12px;
+	color: inherit;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 1.1;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.1;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 1.1;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.1;
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 1;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+	color: #37cadd;
+}
+
+address {
+	font-style: italic;
+	margin-bottom: 24px;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted #2b2b2b;
+	cursor: help;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+cite,
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+mark,
+ins {
+	background: #37cadd;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 24px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: monospace, serif;
+	font-size: 14px;
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+	line-height: 1.6;
+}
+
+pre {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	margin-bottom: 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 12px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+blockquote {
+	font-size: 19px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 1.2631578947;
+	margin-bottom: 24px;
+}
+
+blockquote cite,
+blockquote small {
+	color: #2b2b2b;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: 400;
+}
+
+blockquote {
+	border: 0;
+	position: relative;
+	font-family: Georgia, serif;
+}
+
+blockquote p {
+	padding: 20px 0 0 48px;
+}
+
+blockquote p:before {
+	content: "\201C";
+	display: block;
+	font-size: 84px;
+	line-height: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+blockquote footer {
+	padding-left: 20px;
+}
+
+small {
+	font-size: smaller;
+}
+
+big {
+	font-size: 125%;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+dl {
+	margin-bottom: 24px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 24px;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0 0 24px 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 20px;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+fieldset {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 0 0 24px;
+	padding: 11px 12px 0;
+}
+
+legend {
+	white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	font-size: 100%;
+	margin: 0;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+input,
+textarea {
+	background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+th,
+td {
+	padding: 6px;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	font-weight: bold;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+}
+
+del {
+	color: #767676;
+}
+
+hr {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 23px;
+}
+
+::selection {
+	background: #37cadd;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #37cadd;
+	color: #fff;
+	text-shadow: none;
+}
+
+:hover {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease; 
+	transition: all 0.2s ease;
+}
+
+.required {
+	color: #F00;
+}
+
+.clear {
+	clear: both;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+html, body {
+	height: auto;
+	min-height: 100% !important;
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('./fonts/raleway-regular-webfont.eot');
+    src: url('./fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('./fonts/raleway-regular-webfont.woff') format('woff'),
+         url('./fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper {
+    position: relative;
+}
+
+.header-wrap {
+    position: relative;
+    /* z-index: 9999; */
+}
+
+	.top-bar {
+	    background-color: #eee;
+	    font-size: .85em;
+	    line-height: 30px;	
+	    display: block;
+	}
+	.top-bar-left {
+	    float: left;
+	}
+	.top-bar-info {
+	    color: #555;
+	}
+	.top-bar-right {
+	    float: right;
+	}
+	ul.top-bar-sns {
+	    margin: 0;
+	    overflow: hidden;
+	    font-size: 18px;
+	}
+	.top-bar-right .top-bar-sns li {
+		float: left;
+		height: auto;
+		list-style-type: none;	
+	    margin-left: 10px;
+	}
+	.top-bar ul li a {
+	    color: #555;
+	}
+
+.main-header {
+	background-color: rgba(255,255,255,1);
+    color: #555;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 5px 0 rgba(100,100,100,.2);
+}
+
+	.navbar-brand {
+	    float: left;
+	    height: auto;
+	    padding: 0;
+	}
+	img.site-logo {
+	    float: left;
+	    height: auto;
+	    height: 100px;
+	}
+	.nav {
+	    margin-top: 25px;
+	}
+	.navbar {
+		margin-bottom: 0;
+		padding: 10px;
+	}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #e7e7e7;
+}
+	.navbar-default .navbar-nav>.active>a>span, .navbar-default .navbar-nav>.active>a>span:focus, .navbar-default .navbar-nav>.active>a>span:hover {
+		background-color: transparent;
+	    color: #555;
+	    font-size: 18px;
+		font-family: 'selfFont', 'Open Sans', sans-serif;
+		font-weight: bold;
+	}
+	.navbar-default .navbar-nav>li>a>span {
+	    color: #000;
+	    font-size: 18px;
+		font-family: 'selfFont', 'Open Sans', sans-serif;
+		font-weight: bold;		
+	    text-transform: uppercase;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}	
+	.navbar-default .navbar-nav>li>a>span:hover {
+		border-bottom: #b80013 2px solid;	    
+	}
+
+.homepage section {
+    position: relative;
+}
+
+	.bg-home {
+		background: url(images/bg-home.png) no-repeat top center;
+		background-size: cover;
+		height: auto;
+		padding: 12px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.bg-home h1 {
+		color: #fff;
+		font-size: 45px;
+		font-weight: normal;
+		margin: 0;
+		padding: 5px 0;
+	}
+	.bg-home .whatsapp {
+	    height: auto;
+	}
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat left 20px;
+	    color: #fff;
+	    font-size: 38px;
+	    font-weight: normal;
+	    margin: 0;
+	    padding: 0 0 0 36px;
+	    text-align: left;
+	}
+	.bg-home .whatsapp p a {
+	    color: #fff;
+	}	
+	.bg-home .whatsapp p a:hover {
+	    text-decoration: none;
+	}
+
+.bg-banner {
+	height: auto;
+    margin-bottom: 22px;	
+    margin-top: 0;
+}
+
+section.home-section-3 {
+    padding: 50px 0;
+    background-color: #ebebeb;
+}
+
+	section.home-section-3 .section-title {
+		color: #b80013;		
+		font-size: 38px;
+		font-weight: normal;
+		text-align: center;
+	}
+	.section-title.no-subtitle {
+	    padding-bottom: 30px;
+	}	
+	.fancy{
+		line-height: 0.5;		
+	}
+	.fancy span {
+		display: inline-block;
+		position: relative;
+	}
+	.fancy span:before, .fancy span:after {
+	    content: "";
+	    position: absolute;
+	    height: 14px;
+	    border-bottom: 1px solid #333;
+	    top: 0;
+	    width: 240px;
+	}	
+	.fancy span:before {
+	    right: 100%;
+	    margin-right: 15px;
+	}
+	.fancy span:after {
+	    left: 100%;
+	    margin-left: 15px;
+	}
+	.titulo-funciona {
+		float: none;
+		height: auto;
+	}
+	.magee-feature-box.style1 img {
+		display: block;
+	    float: none;
+	    margin: 0 auto;
+	    height: auto;
+	}
+	section.home-section-3 .feature-content{
+		height: auto;
+	}
+	section.home-section-3 .feature-content p{
+		text-align: center;
+	}	
+
+footer {
+    color: #fff;
+    font-size: 12px;
+    z-index: 2;
+    position: relative;
+}
+footer a {
+    color: #ffffff;
+}
+
+	.footer-principal {
+	    background: #000;
+	}
+	.footer-principal article.footer-cuerpo {
+	    height: auto;
+	    margin-bottom: 40px;
+	    margin-top: 40px;
+	}	
+	.footer-principal article.footer-cuerpo section.texto-footer h5 {
+	    color: #fff;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 22px;
+	    font-weight: bold;
+	    line-height: 20px;
+	    margin-bottom: 22px;
+	    text-transform: uppercase;
+	}
+	.footer-principal article.footer-cuerpo section.texto-footer p {
+	    color: #fff;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 16px;
+	    font-weight: normal;
+	    line-height: 20px;
+	}
+	.footer-principal article.footer-cuerpo figure.logo {
+	    height: auto;
+	    margin-bottom: 30px;
+	}
+	.footer-principal article.footer-cuerpo a.btn_inscribete {
+	    background: #B80015;
+	    color: white;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 16px;
+	    margin-top: 10px;
+	    transition: .5s;
+	    -webkit-transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -ms-transition: .5s;
+	    text-align: center;
+	    text-decoration: none;
+	}
+	.footer-principal article.footer-cuerpo section.bloque-pie {
+	    height: auto;
+	}
+	.footer-principal article.footer-cuerpo section.bloque-pie h3.tit-pie {
+	    color: #FFF;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 20px;
+	    margin-bottom: 25px;
+	}
+	.footer-principal article.footer-cuerpo section.bloque-pie ul {
+	    margin: 0;
+	    padding: 0;
+	}
+	.footer-principal article.footer-cuerpo section.bloque-pie li {
+	    list-style: none;
+	    margin-bottom: 10px;
+	}
+	.footer-principal article.footer-cuerpo section.bloque-pie li a {
+	    color: #FFF;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 14px;
+	}
+
+.footer-info-area {
+    padding: 20px 0 0;
+    background-color: #B80015 !important;
+}
+
+	.site-info {
+	    font-size: 15px;
+	}
+	.site-social {
+	    font-size: 18px;
+		text-align: right;
+	}
+	.site-social li {
+		list-style-type: none;
+		display: inline-block;
+	}
+	.site-social li a {
+	    display: block;
+	    margin-left: 1em;
+	}
+
+/*--*/
+article.contenedor-cuerpo-interno {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+	article.contenedor-cuerpo-interno section.info-cuerpo {
+		height: auto;
+		width: 100%;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas {
+		height: auto;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas .bg-tecnico {
+		background: url(images/bg-home.png) no-repeat center top;
+		background-size: cover;
+		height: auto;
+		margin-bottom: 22px;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas .bg-tecnico h2 {
+		color: #fff;
+		font-size: 38px;
+		font-weight: normal;
+		margin: 0;
+		padding: 34px 0;
+		text-align: center;
+	}
+article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section#descripcion-tecnico {
+	height: auto;
+	margin: 20px 0 22px;
+}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section#descripcion-tecnico p {
+		color: #000;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		margin: 0;
+	}
+
+article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos {
+    height: auto;
+    margin: 20px 0 22px;
+}
+
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico {
+		border: #E5E5E5 1px solid;
+		height: auto;
+		margin-bottom: 15px;		
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico h3 {
+		color: #B80013;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		text-align: center;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico p {
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		margin: 0 0 10px;
+		line-height: 28px;
+		text-align: center;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico .votaciones {
+		height: auto;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico .votaciones .centrar_votos{
+		margin: auto;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico .votaciones .num_votes{
+		height: auto;
+		margin-top: 10px;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico .votaciones .num_votes p{
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+	}	
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico figure.imagen {
+		height: auto;
+		margin-top: 15px;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico figure.imagen img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		width: 40%;
+	}
+	article.contenedor-cuerpo-interno section.info-cuerpo article.contenido-paginas section.content-tecnicos .cnt-tecnico a.btn_ver {
+		background: #C52C2D url(./images/ver-mas.png) no-repeat 160px 12px;
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		margin-top: 16px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+/*---*/
+article.detalle-tecnico {
+	height: auto;
+}
+
+	.page-title-bar {
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		padding: 20px 0;
+		text-transform: uppercase;
+		font-size: 13px;
+		background-color: #f5f5f5;
+	}
+	.title-left .page-title {
+		float: left;
+		height: auto;
+	}
+		.title-left .page-title h1 {
+			color: #555;
+		    font-size: 18px;
+		    line-height: 1;
+		    margin: 0;
+		    text-align: left;	    
+		}
+
+	.title-left .breadcrumb-nav {
+	    float: right;
+	    height: auto;
+	}
+		.breadcrumb-nav span, .breadcrumb-nav a {
+		    color: #555555;
+		}
+		.breadcrumb-nav a:hover {
+		    color: #b80013;
+		}
+
+.post-wrap{
+	height: auto;
+	padding-bottom: 40px;
+}
+article.detalle-tecnico .post-wrap .col-perfil {
+	background: #26292E;
+	height: auto;
+	margin-top: 15px;
+	padding: 10px 0;
+}
+
+	article.detalle-tecnico .post-wrap .col-perfil p {
+		margin: 0;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil p img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		/* width: 100%; */
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil {
+		height: auto;
+	}	
+	article.detalle-tecnico .post-wrap .col-perfil .perfil ul {
+		margin: 0;
+		padding: 0;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li {
+		background: #33373D;
+		list-style: none;
+		margin-bottom: 7px;
+		padding: 14px;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li:hover {
+	    background: #C23838;
+	}	
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li a {
+		color: white;
+		display: block;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		text-decoration: none;
+		text-align: right;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li a.icon-perfil {
+	    background: url(images/icon-perfil.png) no-repeat left top;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li a.icon-trabajos {
+		background: url(images/icon-trabajos.png) no-repeat left top;
+	}
+	article.detalle-tecnico .post-wrap .col-perfil .perfil li a.icon-galeria {
+		background: url(images/icon-galeria.png) no-repeat left top;
+	}
+
+.no-aside .col-main {
+    width: 100%;
+}
+.entry-content, .entry-content p {
+    color: #333333;
+}
+	.entry-content h3 {
+		border-bottom: #C23838 1px solid;
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 25px;
+		padding: 0 0 12px;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+	}
+	.col-main, .col-aside-left, .col-aside-right {
+	    position: relative;
+	    min-height: 1px;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	}
+	.entry-header {
+	    margin-bottom: 5px;
+	}
+	.entry-title, .entry-title a {
+		border-bottom: #C23838 1px solid;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 25px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #333;
+		padding: 0 0 12px;
+		margin: 0 0 10px;
+	}
+	.entry-subtitle {
+	    color: #000;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 20px;
+	    font-weight: 400;
+	    text-transform: uppercase;
+	    padding: 5px 0;
+	    margin: 0 0 8px;
+	}
+	.entry-subtitle a {
+	    color: #B80013;
+	    text-decoration: none;
+	}
+	.entry-subtitle a:hover {
+	    color: #B80013;
+	    text-decoration: underline;
+	}
+	.post-inner, .page-inner {
+	    padding-top: 55px;
+	}
+	.post-inner, .page-inner {
+	    padding-bottom: 40px;
+	}
+	.textwidget {
+	    color: #333;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 18px;
+	}
+	.panel-grid-cell .widget-title {
+	    margin-top: 0;
+	}
+	#pg-75-0, #pl-75 .so-panel {
+		margin-bottom: 30px;
+	}
+
+	table, th, td {
+	    border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+		border-width: 1px 0 0 1px;
+		margin-bottom: 24px;
+		width: 100%;
+	}
+	table tr {
+	    border: 1px solid #ddd;
+	    padding: 5px;
+	}
+	table th, table td {
+	    padding: 10px;
+	    text-align: center;
+	}
+
+.entry-content-trabajos {
+	background: #fff;
+	height: auto;
+	margin-top: 40px;
+}
+	.aligncenter, div.aligncenter {
+		display: block;
+		margin: 5px auto 5px auto;
+	}
+	.entry-content-trabajos h4 {
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 25px;
+		padding: 0 0 12px;
+		margin: 0 0 20px;
+	}
+	.entry-content-trabajos ul {
+	    margin: 0;
+	    padding: 0;
+	}
+	.entry-content-trabajos li {
+		background: url(images/vineta-trabajos.png) no-repeat left 5px;
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		list-style: none;
+		padding: 0 0 0 40px;
+		margin-bottom: 8px;
+	}
+
+.entry-content-galeria {
+    background: #fff;
+    height: auto;
+    margin-top: 40px;
+}
+	.container .container {
+	    width: 100%;
+	}
+	.entry-content-galeria img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.entry-content-galeria h4 {
+		color: #333;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 25px;
+		padding: 0 0 12px;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+
+@media screen and (max-width: 1024px){
+	.nav {
+		margin-top: 30px;
+	}
+	.navbar-default .navbar-nav>li>a>span {
+	    font-size: 16px;
+	}
+	.nav>li>a {
+	    padding: 10px 6px;
+	}
+
+	.bg-home h1 {
+	    font-size: 32px;
+	}
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 70px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0;
+	    padding: 0 0 0 36px;
+	    text-align: right;
+	}
+	.fancy span:before, .fancy span:after {
+		width: 70px;
+	}
+
+}
+
+@media screen and (max-width: 854px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 0 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0;
+	    padding: 0 0 0 36px;
+	    text-align: right;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	.nav {
+		margin-top: 30px;
+	}
+	.navbar-default .navbar-nav>li>a>span {
+	    font-size: 16px;
+	}
+	.nav>li>a {
+	    padding: 10px 6px;
+	}
+
+	.bg-home h1 {
+	    font-size: 32px;
+	}
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat left 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0;
+	    padding: 0 0 0 36px;
+	    text-align: left;
+	}
+	.fancy span:before, .fancy span:after {
+		width: 70px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.nav {
+		margin-top: 30px;
+	}
+	.navbar-default .navbar-nav>li>a>span {
+	    font-size: 16px;
+	}
+	.nav>li>a {
+	    padding: 10px 6px;
+	}
+
+	.bg-home h1 {
+	    font-size: 32px;
+	}
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat left 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0;
+	    padding: 0 0 0 36px;
+	    text-align: left;
+	}
+	.fancy span:before, .fancy span:after {
+		width: 70px;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+
+	.fancy {
+	    line-height: 40px;
+	}
+
+	img.site-logo {
+	    float: left;
+	    height: auto;
+	}
+	.navbar-brand {
+	    float: left;
+	    height: auto;
+	    padding: 0;
+	    width: 80%;
+	}
+	.navbar-toggle {
+	    margin-right: 0;
+	}
+	.bg-home h1 {
+	    font-size: 32px;
+	    text-align: center;
+	}
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 16px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+		.magee-feature-box.style1 img {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			height: auto;
+		}
+		.fancy span:before {
+		    right: 0;
+		    margin-right: 0;
+		}
+		.fancy span:after {
+		    left: 0;
+		    margin-left: 0;
+		}
+		.fancy span:before, .fancy span:after {
+			content: "";
+			position: absolute;
+			height: auto;
+			border-bottom: 1px solid #333;
+			bottom: 0;
+			width: 100%;
+		}
+		article.cuadro img{
+			margin: auto;
+		}
+		section.home-section-3 .section-title {
+			font-size: 30px;		
+			margin-top: 0;
+		}
+
+		.footer-principal article.footer-cuerpo a.btn_inscribete {
+			display: block;
+			margin-top: 10px;
+			margin: auto;
+		}
+
+		.footer-info-area {
+		    padding: 20px 0 20px;
+		}
+		.site-info {
+		    font-size: 15px;
+			text-align: center;
+		}
+		.site-social {
+		    font-size: 18px;
+			text-align: center;	    
+		}
+		.site-social ul{
+			margin: 0;
+			padding: 0;
+		}
+
+}
+
+@media screen and (max-width: 736px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 218px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+	
+}
+@media screen and (max-width: 600px){
+	table {
+	    border: 0;
+	}
+	table td {
+	    display: block;
+	    text-align: right;
+	    font-size: 13px;
+	    border-bottom: 1px dotted #ccc;
+	}
+	table td:before {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	table tr {
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #ddd;
+	}
+
+}
+@media screen and (max-width: 640px){
+	
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 172px 15px;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 156px 15px;
+	}
+
+}
+
+@media screen and (max-width: 568px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 140px 15px;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 90px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 414px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 62px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 411px){
+	
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 60px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 375px){
+	
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 45px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 360px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 38px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 320px){
+	.bg-home .whatsapp p {
+	    background: url(images/icon-whatsapp.png) no-repeat 18px 15px;
+	    color: #fff;
+	    font-size: 32px;
+	    font-weight: normal;
+	    margin: 0 auto;
+	    padding: 0 0 0 0;
+	    text-align: center;
+	}
+
+}
+</style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style.css">
+	<!-- jquery rate yo -->
+	<link rel="stylesheet" href="css/jquery.rateyo.min.css"/>
+	<!-- jquery prettyphoto css -->
+	<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='' />
+	<link rel="shortcut icon" href="images/favicon.png">  
+	<title>Detalle del servicio | Hogar SOS</title>
+</head>
+<body class="homepage">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0&appId=1427462244193215&autoLogAppEvents=1"></script>	
+	<div class="wrapper">
+		<header class="header-wrap">
+			<div class="top-bar">
+			  <div class="container">
+			      <div class="top-bar-left">
+			          <div class="top-bar-info"></div>                      
+			      </div>
+			      <div class="top-bar-right">
+			        <ul class="top-bar-sns">
+			        	<li>
+			        		<a target="_blank" rel="" href="https://www.facebook.com/" data-placement="bottom" data-toggle="tooltip" title="Facebook">
+			        			<i class="fa fa-facebook"></i>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a target="_blank" rel="" href="#" data-placement="bottom" data-toggle="tooltip" title="Twitter">
+			        			<i class="fa fa-twitter"></i>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a target="_blank" rel="" href="#" data-placement="bottom" data-toggle="tooltip" title="YouTube">
+			        			<i class="fa fa-youtube"></i>
+			        		</a>
+			        	</li>
+			        </ul>                          
+			      </div>
+			  </div>
+			</div>
+			<div class="main-header">
+				
+				<nav class="navbar navbar-default">
+				  <div class="container">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      </button>
+				      <a class="navbar-brand" href="#">
+				      	<img src="images/logo-hogar-sos.png" alt="" class="site-logo normal_logo">
+				      </a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right">
+				</nav>
+
+				<div class="limpiar"></div>
+
+			</div>
+			<div class="limpiar"></div>
+
+		</header>
+
+		<article class="detalle-tecnico">
+			</section>
+			<!-- -->
+
+			<div class="post-wrap">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+							<section class="col-perfil">
+								<div class="perfil">
+									<ul>
+										<li><a href="javascript:void(0);" class="icon-perfil">Perfil del tecnico</a></li>
+										<li><a href="#trabajos-realizados" class="icon-trabajos link_traslate">Trabajos que realiza</a></li>
+										<li><a href="#galeria-de-fotos" class="icon-galeria link_traslate">Galeria de imágenes</a></li>
+									</ul>
+								</div>
+
+							</section>
+						
+						</div>
+						<!-- -->
+
+					
+												<!-- -->
+
+												<div class="entry-content-trabajos" id="trabajos-realizados">
+													<p>
+														<img class="size-full wp-image-155 aligncenter" src="images/trabajos-que-realiza.png" alt="" width="100" height="100">
+													</p>
+													<h4 style="text-align: center;">Trabajos que realiza</h4>
+													<ul>
+														<li>Trabajos decorativos: Estucados, mármol, escarchados micro cementos.</li>
+														<li>Mantenimientos integrales. tiendas, oficinas, almacenes, bancos,</li>
+														<li>Pintado en edificaciones: Solaqueados, Empastados, estructuras metálicas.</li>
+													</ul>
+												
+												</div>
+												<!-- -->
+
+												<div class="entry-content-galeria" id="galeria-de-fotos">
+													<img src="images/galeria-de-imagenes.png" alt="">
+													<h4>Galeria de imágenes</h4>
+
+													<div class="container">
+													    
+													    <div class="row">
+
+													        <section class="animated fadeInDown post-galeria-servicios">
+													            
+													            
+																<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+																	<div class="cnt-foto">
+																		<a href="images/imagen-pintura-1.jpg" rel="portfolio-image[pp_gal]">
+																		<img src="images/imagen-pintura-1.jpg" class="image">                                                              
+																		</a>
+																	</div>           
+
+																</div>                                                       
+																<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+																	<div class="cnt-foto">
+																		<a href="images/imagen-pintura-2.jpg" rel="portfolio-image[pp_gal]">
+																		<img src="images/imagen-pintura-2.jpg" class="image">                                                              
+																		</a>
+																	</div>
+
+																</div>
+
+																<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+																	<div class="cnt-foto">
+																		<a href="images/imagen-pintura-3.jpg" rel="portfolio-image[pp_gal]">
+																			<img src="images/imagen-pintura-3.jpg" class="image">                                                              
+																		</a>
+																	</div>             
+
+																</div>
+
+													        </section>
+
+													    </div>
+													    <!-- -->
+
+													</div>
+													<!-- -->
+
+                                                    <div class="col-sm-8 col-xs-12">
+
+                                                        <div class="post-inner row no-aside">
+                                                            <div class="col-main">
+                            
+                                                                                    <a href="#" title="Servicios de Albañil">Albañil</a> / 
+                                                                                    <a href="#" title="Servicios de Gasfitero">Gasfitero</a> 
+                                                                                    / 
+                                                                                    <a href="#" title="Servicios de Pintor">Pintor</a> 
+                                                                                    / 
+                                                                                    <a href="#" title="Servicios de Servicios generales">Servicios generales</a>
+                            
+                                                                                </h2>
+                            
+                                                                            </div>
+                                        
+                                                                            </div>
+												</div>
+												<!-- -->
+
+											</div>
+											<!-- -->
+
+										</article>
+
+									</section>
+									<!-- -->
+
+								</div>
+								<!-- -->
+
+							</div>
+
+						</div>
+						<!-- -->
+
+					</div>
+					<!-- -->
+
+				</div>
+				<!-- -->
+				
+			
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- wow js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- jquery rate yo -->
+    <script type="text/javascript" src="js/jquery.rateyo.min.js"></script>
+
+    <!-- jquery prettyphoto -->
+    <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+
+    <script src="js/cargar.js"></script>
+
+</body>
+</html>
+				        	<a href="#">
+				        		<span>Servicios</span>
+				        	</a>
+
+
+				<div class="limpiar"></div>
+
+			</div>
+			<div class="limpiar"></div>
+
+		</header>
+
+		<section class="bg-home" id="home">
+		  <div class="container">
+		  </div>
+		</section>
+
+		<section class="bg-banner section-banner" id="banner">
+		  <img src="images/servicios-para-el-hogar-maestros-disenadores.jpg" alt="Servicios para el hogar, maestros" class="img-responsive">
+		</section>
+
+		<div class="container">
+
+		  <div class="row">
+      
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/DRYWAL-1.png" alt="servicios de Drywall" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/PINTOR-2.png" alt="servicios de Pintor" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/ELECTRICISTA-PRUEBA.png" alt="servicios de Electricista" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/GASFITERO-2.png" alt="servicios de Gasfitero" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/ALBANIL-2.png" alt="servicios de Albañil" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/AIRE-ACONDICIONDO-2-1.png" alt="servicios de Aire Acondicionado" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/VIDRIOS-2.png" alt="servicios de Vidrios" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+	                    
+	        <div class="col-md-5ths col-sm-5ths">
+	          
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/CARPINTERIA-2-1.png" alt="servicios de Carpinteria" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+	          <article class="cuadro">
+	            <section>
+	              <p>
+	                <a href="servicios.html">
+	                  <img src="images/DECORACION-2-1.png" alt="servicios de Decoración" class="img-responsive">
+	                </a>
+	              </p>
+	            </section>
+
+	          </article>
+	          
+	        </div>
+
+		    
+		  </div>
+		  <!-- -->
+
+		</div>
+
+		<section id="califica" class="home-section-3 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h1 class="section-title no-subtitle fancy">
+							<span>¿Por qué es importante calificar?</span>
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="magee-feature-box style1">
+							<div class="bloque-funciona">
+								<div class="icono-funciona">
+									<img src="images/icono-number-1.png" alt="" style="visibility: visible;">
+								</div>
+								<div class="titulo-funciona">
+									<h3></h3>
+								</div>
+								<div class="clear"></div>
+
+							</div>
+
+							<img src="images/0.jpg" class="img-responsive" style="visibility: visible;">
+							<div class="feature-content">
+							  <p>Queremos saber tu experiencia si fuiste bien atendido y el precio fue justo.</p>
+							  <a href="" target="_blank" class="feature-link"></a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="magee-feature-box style1">
+							<div class="bloque-funciona">
+								<div class="icono-funciona">
+									<img src="images/icono-number-2.png" alt="" style="visibility: visible;">
+								</div>
+								<div class="titulo-funciona">
+									<h3></h3>
+								</div>
+								<div class="clear"></div>
+
+							</div>
+
+							<img src="images/0.jpg" class="img-responsive" style="visibility: visible;">
+							<div class="feature-content">
+							  <p>Tu opinión nos ayuda a elegir a los mejores y mas calificados técnicos y profesionales.</p>
+							  <a href="" target="_blank" class="feature-link"></a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="magee-feature-box style1">
+							<div class="bloque-funciona">
+								<div class="icono-funciona">
+									<img src="images/icono-number-3.png" alt="" style="visibility: visible;">
+								</div>
+								<div class="titulo-funciona">
+									<h3></h3>
+								</div>
+								<div class="clear"></div>
+
+							</div>
+
+							<img src="images/0.jpg" class="img-responsive" style="visibility: visible;">
+							<div class="feature-content">
+							  <p>Nos brinda mayor confianza al elegir un técnico o profesional con buena calificación</p>
+							  <a href="" target="_blank" class="feature-link"></a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer>
+      
+			<div class="footer-principal">
+
+				<div class="container">
+				  
+				  <div class="row">
+				    
+				    <!-- footer-cuerpo -->
+				    <article class="footer-cuerpo">	
+
+						</div>
+
+						<div class="limpiar"></div>
+
+					</div>
+	        
+	         
+				</div>
+			
+			</div>	
+
+		</footer>
+
+	</div>
+</body>
+</html>
